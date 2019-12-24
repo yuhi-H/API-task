@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ユーザー一覧</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="text-primary mb-4">投稿一覧(￣▽￣)</h1>
+        <div>
+            <ul id="posts"></ul>
+        </div>
+
+        <div id="login_data" class="mb-4"></div>
+        <a href="login.html">ログイン画面へ</a>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        (get_posts());
+    </script>
+</body>
+
+
+<style>
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: blue;
+    }
+</style>
+
+</html>
