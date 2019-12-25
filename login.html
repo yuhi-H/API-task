@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ログイン</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="text-primary mb-4">ログイン</h1>
+        <div class="signUpFrom  mb-4">
+            <input id="user_email" type="email" placeholder="email">
+            <input id="user_password" type="password" placeholder="password">
+            <input id="user_password_confirmation" type="password" placeholder="passwordを再入力">
+            <a href="" onclick="sign_in();return false;" class="btn btn-primary">ログインしちゃう</a>
+        </div>
+        <div id="login_data" class="mb-4"></div>
+
+        <ul>
+            <li><a href="index.html">ユーザー登録はこちら！</a></li>
+            <li><a href="users.html">ユーザー一覧はこちら！</a></li>
+            <li><a href="post.html">投稿一覧はこちら！</a></li>
+            <li><a href="postEdit.html">投稿編集はこちら！</a></li>
+            <li><a href="postDelete.html">投稿削除はこちら！</a></li>
+            <li><a href="postUp.html">新規投稿はこちら！</a></li>
+            <li><a href="delete.html">ユーザー削除はこちら！</a></li>
+            <li><a href="userEdit.html">ユーザー編集はこちら！</a></li>
+            <li><a href="timeline.html">タイムラインはこちら！</a></li>
+        </ul>
+    </div>
+
+    <script>
+        (function () {
+            if (localStorage.token) {
+                document.getElementById('login_data').innerHTML = 'ログイン中でーす！<br> <a href="" onclick="log_out();" class="btn btn-danger btn mb-4">ログアウト</a>';
+            }
+        }());
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+<style>
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: blue;
+    }
+</style>
+
+</html>

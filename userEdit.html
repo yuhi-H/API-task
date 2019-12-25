@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ユーザー編集</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="text-primary mb-4">ユーザー編集してみよう！</h1>
+        <div class="mb-4">
+            <p>今の名前: </p>
+            <p id="userName"></p>
+            <p>今の自己紹介: </p>
+            <p id="userBio"></p>
+        </div>
+        <div id="userInfo" class="mb-4"></div>
+        <div class="signUpFrom mb-4">
+            <input id="user_name" type="text" placeholder="変更したい名前" required>
+            <input id="user_bio" type="text" placeholder="変更したい自己紹介" required>
+            <a href="" onclick="put_user();return false;" class="btn btn-primary btn">送信</a>
+        </div>
+
+        <div><a href="login.html">ログイン画面へ！</a></div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        if (!localStorage.token) {
+            window.location.href = 'login.html';
+        }
+        document.getElementById('userName').textContent = localStorage.getItem('name');
+        document.getElementById('userBio').textContent = localStorage.getItem('bio');
+    </script>
+    <style>
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: blue;
+        }
+    </style>
+</body>
+
+</html>

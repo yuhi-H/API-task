@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h2>投稿編集でーす( ＾∀＾)</h2>
+    <h2>ポストIDがわからない人はタイムラインで確認できるよ！！</h2>
+    <input id="postEditID" type="text" placeholder="編集したいポストIDを入れてね！">
+    <input id="postEditText" type="text" placeholder="編集したい内容を入れてね！">
+    <input type="submit" onclick="postEdit();return false;">
+
+    <div>
+        <h2 id="postEditConfirm"></h2>
+    </div>
+
+    <a href="login.html">ログイン画面へ</a>
+    <script src="main.js"></script>
+
+    <script>
+        (postEdit());
+    </script>
+</body>
+
+<style>
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: blue;
+    }
+</style>
+
+</html>
