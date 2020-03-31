@@ -1,1 +1,1 @@
-# snsのAPIをjavascriptnのfetchで呼び出し作成しました。
+# snsのAPIをjavascriptのfetchで呼び出し作成しました。
