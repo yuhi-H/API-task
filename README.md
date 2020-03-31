@@ -1,1 +1,1 @@
-#test
+# snsのAPIをjavascriptnのfetchで呼び出し作成しました。
